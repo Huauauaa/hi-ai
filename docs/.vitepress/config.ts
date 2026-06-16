@@ -8,7 +8,7 @@ function normalizeBase(raw: string | undefined): string {
 
 export default defineConfig({
   title: 'hi-ai',
-  description: 'hi-ai 文档 — Harness、算子与 AI 工程笔记',
+  description: 'hi-ai 文档 — Harness、算子、Benchmark 与 AI 工程笔记',
   appearance: 'dark',
   base: normalizeBase(process.env.VITEPRESS_BASE),
   head: [
@@ -37,6 +37,7 @@ export default defineConfig({
     sidebar: [
       { text: 'Harness', link: '/harness' },
       { text: '算子', link: '/operator' },
+      { text: '大模型的 Benchmark', link: '/benchmark' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Huauauaa/hi-ai' },
